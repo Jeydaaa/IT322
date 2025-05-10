@@ -68,11 +68,13 @@ session_start();
                             }
                         ?>
                     </span>
+
                 </a><!-- End Profile Image Icon -->
 
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                     <li class="dropdown-header">
-                        <h6><?php 
+                    <h6>
+                    <?php 
                         echo isset($_SESSION['authuser']['fullName']) ? $_SESSION['authuser']['fullName'] : "Guest"; 
                         ?>
                     </h6>
@@ -81,6 +83,7 @@ session_start();
                         echo isset($_SESSION['role']) ? ucfirst($_SESSION['role']) : "No Role"; 
                         ?>
                     </span>
+
                     </li>
                     <li><hr class="dropdown-divider"></li>
                     <li>
@@ -115,7 +118,6 @@ session_start();
 
         </ul>
     </nav><!-- End Icons Navigation -->
-
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <?php
